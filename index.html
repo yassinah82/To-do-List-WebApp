@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/8e7c793750.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="section-center">
+        <div class="todo-form">
+            <h3> To Do List </h3>
+            <div class="form-control">
+                <input type="text" name="todo-list" id="todo-input" placeholder="e.g. Go to Gym"> </input>
+                <input type="submit" class="add-btn" value="Add"></input>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+
+            <button type="button" class="clear-btn">Clear all Items</button>
+        </div>
+        <div class="todo-container">
+            <div class="todo-list ">
+                <!-- the todo list will go here  and this will be the structure of the dynamic list -->
+
+
+                <div class="todo-item">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-1" value="checked" />
+                        <label class="todo-title" for="todo-checkbox-1" data-id="date"> todo 1</label>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-2" />
+                        <label class="todo-title" for="todo-checkbox-2" data-id="date"> todo 1</label>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+
+                <div class="todo-item-done">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-3" />
+                        <label class="todo-title" for="todo-checkbox-3" data-id="date"> todo 1</label>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="alert-message">
+                <span class="alert"></span>
+            </div>
+            <div id="counter">
+                <span class="counter-completed"> </span>
+                <span class="counter-left"> </span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
