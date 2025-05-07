@@ -251,13 +251,10 @@ controls.addEventListener("click", (event) => {
 function displayAlert(text, action) {
     alert.textContent = text;
     alert.className = `alert alert-${action}`;
-    alert.style.display = 'block'; // Show the alert
-
-    // Hide the alert after 3 seconds
+    // remove alert after 3 seconds 
     setTimeout(function () {
         alert.textContent = "";
         alert.classList.remove(`alert-${action}`);
-        alert.style.display = 'none'; // Hide the alert
     }, 3000);
 }
 /* 
